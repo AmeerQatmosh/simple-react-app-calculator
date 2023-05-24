@@ -1,0 +1,75 @@
+$body-color: #ffffff;
+$primary-color: #007bff;
+$danger-color: #dc3545;
+$success-color: #28a745;
+$secondary-color: #6c757d;
+
+.body {
+  background-color: $body-color;
+}
+
+.calculator-structure {
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.calculator-screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: left;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+
+.btn-outline-primary {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn-outline-danger {
+  color: $danger-color;
+  border-color: $danger-color;
+}
+
+.btn-outline-success {
+  color: $success-color;
+  border-color: $success-color;
+}
+
+.btn-outline-secondary {
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.btn-outline-secondary,
+.btn-outline-success {
+  grid-column: span 2;
+}
