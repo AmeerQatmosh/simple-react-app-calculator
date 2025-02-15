@@ -3,6 +3,8 @@ import Calculator from './component/calculator';
 import './App.css';
 
 function App() {
+
+  // Dark mode state and toggle function
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem("darkMode") === "true";
   });
@@ -14,6 +16,7 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+  
 
   return (
     <div className="App">

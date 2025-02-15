@@ -1,0 +1,97 @@
+.history-panel {
+  width: 90%;
+  max-width: 450px;
+  height: auto;
+  max-height: 600px;
+  overflow-y: auto;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 25px;
+  border: 1px solid var(--result-color);
+  border-radius: 25px;
+  box-sizing: border-box;
+  /* Scrollbar customization */
+  scrollbar-width: thin;
+  scrollbar-color: var(--result-color) var(--background-color);
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--result-color);
+    border-radius: 10px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .clear-history-btn {
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: var(--danger-color);
+      color: white;
+      transform: scale(1.05); /* Slight zoom effect */
+    }
+
+    &:active {
+      transform: scale(0.95); /* Press effect */
+    }
+  }
+
+  .history-list {
+    list-style: outside;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      margin-left: 15px;
+      font-size: 1rem;
+      border-bottom: 1px dotted var(--text-color);
+    }
+  }
+
+  /* Responsive styling for smaller screens */
+
+  @media only screen and (orientation: landscape) {
+    width: 100%;
+    padding: 25px;
+  }
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding: 25px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 90%;
+    padding: 15px;
+  }
+
+  @media (max-width: 992px) {
+    width: 90%;
+    padding: 15px;
+  }
+
+  @media (max-width: 600px) {
+    width: 90%;
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    width: 90%;
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%; /* Shorter height for very small screens */
+    padding: 15px;
+  }
+}

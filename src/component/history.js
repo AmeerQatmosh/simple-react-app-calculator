@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./calculator.scss";
-
+import "./history.scss";
 export default function History({ history, clearHistory }) {
   return (
     <div className="history-panel">

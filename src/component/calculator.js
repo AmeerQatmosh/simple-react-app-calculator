@@ -53,8 +53,8 @@ export default function Calculator() {
       setInput(result.toString());
       setDisplayedInput(result.toString());
     } catch (error) {
-      setInput("Error");
-      setDisplayedInput("Error");
+      setInput("");
+      setDisplayedInput("");
     }
   };
 
@@ -76,9 +76,6 @@ export default function Calculator() {
 
   return (
     <div className="calculator-container">
-      {/* History Panel */}
-      <History history={history} clearHistory={clearHistory} />
-
       {/* Calculator */}
       <div className="body">
         <div className="calculator-structure">
@@ -108,8 +105,8 @@ export default function Calculator() {
             <Button variant="outline-primary" onClick={() => handleNumberClick("9")}>
               9
             </Button>
-            <Button variant="primary" onClick={() => handleOperationClick("+")}>
-              +
+            <Button variant="primary" onClick={() => handleOperationClick("÷")}>
+              ÷
             </Button>
             <Button variant="outline-primary" onClick={() => handleNumberClick("4")}>
               4
@@ -120,8 +117,8 @@ export default function Calculator() {
             <Button variant="outline-primary" onClick={() => handleNumberClick("6")}>
               6
             </Button>
-            <Button variant="primary" onClick={() => handleOperationClick("-")}>
-              -
+            <Button variant="primary" onClick={() => handleOperationClick("×")}>
+              ×
             </Button>
             <Button variant="outline-primary" onClick={() => handleNumberClick("1")}>
               1
@@ -132,8 +129,8 @@ export default function Calculator() {
             <Button variant="outline-primary" onClick={() => handleNumberClick("3")}>
               3
             </Button>
-            <Button variant="primary" onClick={() => handleOperationClick("×")}>
-              ×
+            <Button variant="primary" onClick={() => handleOperationClick("-")}>
+              -
             </Button>
             <Button variant="outline-primary" onClick={() => handleNumberClick("0")}>
               0
@@ -144,8 +141,8 @@ export default function Calculator() {
             <Button variant="outline-primary" onClick={toggleSign}>
               +/-
             </Button>
-            <Button variant="primary" onClick={() => handleOperationClick("÷")}>
-              ÷
+            <Button variant="primary" onClick={() => handleOperationClick("+")}>
+              +
             </Button>
             <Button variant="outline-secondary" onClick={handleBackspaceClick}>
               ←
@@ -156,6 +153,11 @@ export default function Calculator() {
           </div>
         </div>
       </div>
+
+       {/* History Panel */}
+       {/* <div className="calculator-container">
+        <History history={history} clearHistory={clearHistory}/>
+       </div> */}
     </div>
   );
 }
