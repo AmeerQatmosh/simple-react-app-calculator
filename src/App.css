@@ -2,6 +2,7 @@
 :root {
   --background-color: #ffffff;
   --text-color: #000000;
+  --result-color: #add2f5;
   --primary-color: #007bff;
   --danger-color: #dc3545;
   --success-color: #28a745;
@@ -9,8 +10,9 @@
 }
 
 .dark-mode {
-  --background-color: #121212;
+  --background-color: #000000;
   --text-color: #ffffff;
+  --result-color: #444746;
 }
 
 body {
@@ -23,19 +25,27 @@ body {
 .App {
   text-align: center;
   background-color: var(--background-color); /* Ensure App container uses background variable */
+  color: var(--text-color); /* Ensure App container uses text variable */ 
 }
 
+
 button {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border: none;
-  border-radius: 5px;
+  border-color: var(--result-color);
+  color: var(--result-color);
+  background-color: var(--background-color);
+  border: 1px solid;
+  border-radius: 20px;
   padding: 10px;
   cursor: pointer;
 }
 
+
 button:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--result-color);
+  border-color: var(--result-color);
+  color: var(--text-color);
 }
 
 /* Light and dark mode specific styles are handled by variables */
+
+
