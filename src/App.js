@@ -1,7 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import Calculator from './component/calculator';
 import './App.css';
-
 function App() {
 
   // Dark mode state and toggle function
@@ -21,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <div className={darkMode ? "dark-mode" : "light-mode"}>
-        <button onClick={toggleDarkMode}>
+        <button className='m-4' onClick={toggleDarkMode}>
           {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
         </button>
         <Calculator />

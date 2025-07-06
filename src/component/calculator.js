@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
-
-import History from "./history"; // Import the new History component
+import CopyButton from "./copyButton";
+// import History from "./history"; // Import the new History component
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./calculator.scss";
+
 
 export default function Calculator() {
   const [input, setInput] = useState("");
@@ -77,10 +78,9 @@ export default function Calculator() {
   return (
     <div className="calculator-container">
       {/* Calculator */}
+      <CopyButton text={input}/>
       <div className="body">
         <div className="calculator-structure">
-          <h1>Simple Calculator</h1>
-
           <div className="calculator-screen">{displayedInput || "0"}</div>
 
           <div className="calculator-buttons">
