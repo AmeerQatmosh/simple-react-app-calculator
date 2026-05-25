@@ -1,0 +1,30 @@
+<svg width="258" height="258" viewBox="0 0 258 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_2001_2)">
+<path d="M0 67.8921C0 66.8471 0.847129 66 1.89212 66H208C219.046 66 228 74.9543 228 86V172C228 183.046 219.046 192 208 192H1.89212C0.847129 192 0 191.153 0 190.108V67.8921Z" fill="#438B8D"/>
+<path d="M0 67.8921C0 66.8471 0.847129 66 1.89212 66H208C219.046 66 228 74.9543 228 86V172C228 183.046 219.046 192 208 192H1.89212C0.847129 192 0 191.153 0 190.108V67.8921Z" fill="url(#paint0_linear_2001_2)" fill-opacity="0.2"/>
+</g>
+<path d="M1.89258 67H208C218.493 67 227 75.5066 227 86V172C227 182.493 218.493 191 208 191H1.89258C1.39987 191 1 190.6 1 190.107V67.8926C1 67.3999 1.39988 67 1.89258 67Z" stroke="#E7DFDF" stroke-width="2"/>
+<rect x="1" y="1" width="256" height="256" rx="50" fill="black" fill-opacity="0.2" stroke="#438B8D" stroke-width="2"/>
+<path d="M196 100V122" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<path d="M188 162H166" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<path d="M196 134V156" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<path d="M157 134V156" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<path d="M166 95H188" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<path d="M157 100V122" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_i_2001_2" x="0" y="66" width="228" height="130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_2001_2"/>
+</filter>
+<linearGradient id="paint0_linear_2001_2" x1="114" y1="66" x2="114" y2="192" gradientUnits="userSpaceOnUse">
+<stop stop-opacity="0"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>
