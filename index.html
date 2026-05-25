@@ -1,1 +1,36 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="Simple Calculator App" content="Simple Calculator App"/><link rel="apple-touch-icon" href="logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Simple Calculator App</title><script defer="defer" src="/simple-react-app-calculator/static/js/main.076963a4.js"></script><link href="/simple-react-app-calculator/static/css/main.2e7e7bac.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/simple-react-app-calculator/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Simple Calculator App" />
+    <link rel="apple-touch-icon" href="/simple-react-app-calculator/favicon.svg" />
+    <link rel="manifest" href="/simple-react-app-calculator/manifest.json" />
+    <title>Simple Calculator App</title>
+    <script type="module" crossorigin src="/simple-react-app-calculator/assets/index-CmezD3Ht.js"></script>
+    <link rel="stylesheet" crossorigin href="/simple-react-app-calculator/assets/index-CHsv9rpO.css">
+  </head>
+  <body>
+    <script>
+      (function () {
+        try {
+          var dark = localStorage.getItem("darkMode") === "true";
+          if (localStorage.getItem("darkMode") == null) {
+            var t = localStorage.getItem("calculatorTheme");
+            if (t && t !== "light") dark = true;
+          }
+          document.documentElement.setAttribute(
+            "data-theme",
+            dark ? "dark" : "light"
+          );
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
